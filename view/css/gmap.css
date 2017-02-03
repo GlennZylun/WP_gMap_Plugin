@@ -1,0 +1,220 @@
+#map-canvas { height: 100% }
+strong { font-weight:bold; }
+ul { list-style:none; }
+ul li { line-height:18px; }
+ul li:hover { background-color:#ccc; }
+ul li span { font-weight:bold; }
+.my-custom-infowindow {
+	border-radius:16px 16px 16px 16px;
+	width:350px !important;
+}
+
+.my-custom-infowindow > div{
+	width: 350px !important;
+}
+
+#infoContent { height:300px; width:320px !important; }
+h1 {
+	border: 1px solid white;
+    font-family: arial,sans-serif !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    line-height: 21px !important;
+    min-height: 21px;
+}
+#map-infowindow-attr-area {
+	display:block;
+	width:290px !important;
+}
+#map-infowindow-attr-area .label {
+	font-weight: bold;
+    margin-right: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+	display: inline-block;
+    vertical-align: top;
+    line-height: 21px;
+}
+#map-infowindow-attr-area .value {
+	display: inline-block;
+    vertical-align: top;
+	font-size: 13px;
+    line-height: 21px;
+	color: #222222;
+	width:180px;
+}
+#map-infowindow-attr-area .value span {
+	color:#ccc;
+}
+#map-infowindow-attr-area .value a {
+	text-decoration:none;
+}
+#map-infowindow-attr-area .value a:hover {
+	text-decoration:underline;
+}
+/** LEGEND CSS **/
+#legend {
+	background: #FFF;
+	padding: 10px;
+	margin: 10px 0 0 20px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	width:250px;
+	border: 1px solid #999;
+}
+#legend h1 {
+	font: normal 14px/14px Arial;
+	margin:10px 0;
+}
+.data-show { margin-top: 10px; }
+.data-show a { text-decoration:none; color:#ff6600; }
+.data-show a:hover { text-decoration:underline; }
+#legend p {  
+	line-height:14px;
+}
+#legend .exclusivity-div {
+	margin:15px 0 0;
+}
+#legend .exclusivity-div  label {}
+#legend .exclusivity-div  label strong {}
+#legend .exclusivity-div ul {
+	list-style:none;
+	margin-top:5px;
+}
+#legend .exclusivity-div ul li {
+	margin-left:15px;
+	line-height:18px;
+	background:none;
+	cursor:pointer;
+}
+#legend .exclusivity-div ul li.selected {
+	background:#ccc;
+}
+#legend .exclusivity-div ul li span { margin:0 0 0 10px; font:normal 12px/14px Arial; padding-bottom:4px;}
+/** SEARCH BOX CSS **/
+#panel {
+	background-color: #FFFFFF;
+    border: 1px solid #999999;
+    margin: 0 0 0 20px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+}
+#panel input { width:300px; }
+/** SITE DATA **/
+#site-data {
+	background: #fff;
+	width: 780px;
+	height: 400px;
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	border: 1px #ccc solid;
+	z-index:10;
+	padding:10px;
+	overflow:hidden;
+	display:none;
+}
+#site-data span.close { font-size:13px; color:#000; position:absolute; top:0; right:0; margin:10px 10px 0 0; cursor:pointer; color:#ff6600; }
+#site-data h3 { font-size:14px; }
+#field-input { margin:10px 0; }
+.table-data {
+	width:780px;
+	height:290px;
+	overflow:auto;
+}
+.ctable {
+	border-top:#ccc solid 1px;
+	table-layout: fixed;
+	white-space: normal;
+	background-color: white;
+	border-right: 1px solid #d7d7d7;
+	border-spacing: 0;
+	table-layout: auto;
+	white-space: nowrap;
+	empty-cells: show;
+}
+.ctable tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+.ctable thead th { 
+	border-bottom: 1px solid #d7d7d7;
+	border-left: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: middle;
+	cursor: default;
+	background-color:#f1f1f1;
+	padding:10px;
+	font-weight:bold;
+}
+.ctable tbody tr {
+	background-color:#fff;
+}
+.ctable tbody tr:hover, .ctable tbody tr.selected {
+	background-color:#edf4ff;
+}
+.ctable tbody tr:hover td, .ctable tbody tr.selected td {
+	border-bottom:1px solid #9ec2fe;
+}
+.ctable .frow {
+	border-bottom:1px solid #d7d7d7;	
+	background-color:#f1f1f1;
+}
+.ctable td {
+	font-size: 13px !important;
+	padding: 8px !important;
+	word-wrap: break-word !important;
+	border-bottom:1px solid #d7d7d7 !important;
+	border-left: 1px solid #d7d7d7 !important;
+	text-align: left !important;
+	vertical-align: top !important;
+	cursor: default !important;
+}
+
+#gmap_search_results ul{
+	list-style: none outside none;
+	margin: 0 !important;
+}
+
+#gmap_search_results ul li {
+    line-height: 18px;
+	margin: 0 !important;
+}
+	
+#gmap_search_results ul li span {
+    font-weight: bold;
+}
+
+#map-canvas img{
+	max-width: none;
+}
+
+#map-canvas h1{
+	margin: 0;
+}
+
+.map_container{
+	position: relative;
+	z-index: 4;
+}
+
+.marker-info #map-infowindow-attr-area .value{
+	width: 100px !important;
+}
+
+.marker-info #infoContent h1 {
+	width: 210px !important;
+}
+
+.marker-info{
+    float: right;
+    margin: 0;
+    overflow: auto;
+    padding: 4px;
+    width: 28%;
+}
